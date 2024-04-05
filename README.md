@@ -1,3 +1,5 @@
+**MONTREAL COLLEGE INFORMATION TECHNOLOGY SPECIAL LAB SESSION**
+
 **Local Variables:**
 
 **Cluster_names:**
