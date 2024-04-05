@@ -27,10 +27,6 @@ variable "cross_tenant_replication_enabled"{
  type=bool
  default=false
 }
-variable "prefix"{
- type=string
- default="mcit"
-}
 
 variable "environment"{
  type=string
