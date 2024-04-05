@@ -25,7 +25,7 @@ This is a list of strings containing the names of the AKS clusters to be created
 
 **location:** Specifies the Azure region where the AKS cluster will be created.
 
-****resource_group_name:** Specifies the name of the resource group where the AKS cluster will be deployed.
+**resource_group_name:** Specifies the name of the resource group where the AKS cluster will be deployed.
 
 **dns_prefix:** Specifies the DNS prefix for the AKS cluster.
 
