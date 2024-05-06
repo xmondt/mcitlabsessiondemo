@@ -45,4 +45,6 @@ output "cloudslists"{
 for 1st element in -->inside the list variable cloudslists--->"azure"1st element
 for 2nd element in -->inside the list variable cloudslists--->"aws" 2nd element
 for 3rd element in -->inside the list variable cloudslists--->"gcp" 3rd element
+for 4th element in -->inside the list variable cloudslists--->"alibaba" 4th element
+for 5th element in -->inside the list variable cloudslists--->"ibm" 5th element
 */
