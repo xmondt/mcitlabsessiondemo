@@ -24,11 +24,11 @@ output "printcity"{
   value = local.city
 }
 output "lengthsa"{
-   value = local.firstname
+   value = local.lengthsa
 }
 output "lengthlastname"{
-   value = local.length_lastname
+   value = local.lengthlastname
 } 
 output "lengthcity"{
-   value = local.length_local.city
+   value = local.lengthcity
 }
