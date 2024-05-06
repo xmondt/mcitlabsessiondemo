@@ -36,3 +36,7 @@ variable "environment"{
  type=string
  default="staging"
 }
+variable "summersports"{
+    type = list(string)
+    default=["soccer","basketball","badminton","tabletennis","football"]
+}
