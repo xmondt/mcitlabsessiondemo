@@ -31,3 +31,4 @@ output "lengthlastname"{
 } 
 output "length.city"{
    value = local.length_local.city
+}
