@@ -32,3 +32,24 @@ output "lengthlastname"{
 output "lengthcity"{
    value = local.lengthcity
 }
+variable "company_name"{
+ type=string
+ default="College"
+}
+variable "years_of_establishment"{
+ type=number
+ default=12
+}
+variable "ifactive"{
+ type=bool
+ default=true
+}
+output "company_name"{
+  value = var.company_name
+}
+output "years_of_establishment_output"{
+  value = var.years_of_establishment
+}
+output "ifactive_output"{
+  value = var.ifactive
+}
