@@ -27,4 +27,4 @@ for 2nd element in -->inside the list variable montreallistofresturants--->"mcdo
 for 3rd element in -->inside the list variable montreallistofresturants--->"timhortons" 3rd element
 for 4th element in -->inside the list variable montreallistofresturants--->"brasserie" 4th element
 for 5th element in -->inside the list variable montreallistofresturants--->"steakhouse" 5th element
-/*
+*/
