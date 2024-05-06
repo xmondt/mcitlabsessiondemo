@@ -42,7 +42,7 @@ variable "summersports"{
 }
 variable "montrealuniversities"{
   type=list(string)
-  default=["mcgill","concordia","vanier","cegep",rosemontcollege"]
+  default=["mcgill","concordia","vanier","cegep","rosemontcollege"]
 }
 variable "montrealresturants"{
   type=list(string)
