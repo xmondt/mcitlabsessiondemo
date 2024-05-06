@@ -19,3 +19,4 @@ output "printlastname"{
 }
 output "printcity"{
   value = local.city
+}
