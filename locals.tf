@@ -70,3 +70,11 @@ default=[[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
 output "flattened_list"{
 value= flatten(var.nested-list)
 }
+locals {
+clouds= ["azure","aws","gcp"] 
+cloud_owners= ["Microsoft", "Amazon", "Google"]
+}
+
+output"cloud_owners_map"{
+value= { for index,cloud in local.clouds: cloud=> local.cloud_owners[index]
+}
