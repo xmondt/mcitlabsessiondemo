@@ -36,3 +36,15 @@ variable "environment"{
  type=string
  default="staging"
 }
+variable "company_name"{
+ type=string
+ default="Montreal College Information Technology"
+}
+variable "years_of_establishment"{
+ type=number
+ default=15
+}
+variable "ifelsecheck"{
+ type=bool
+ default=true
+}
