@@ -1,3 +1,3 @@
 output "summersportslists"{
-   value=[for summersports in local.summersports:summersport]
+   value=[for summersports in var.summersports:summersport]
 }
