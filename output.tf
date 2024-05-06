@@ -1,5 +1,5 @@
 output "summersportslists"{
-   value=[for sport in var.summersportslists:sport]
+   value=[for summersport in var.summersports:summersport]
 }
 /*
 for 1st element in -->inside the list variable summerlistofsports--->"soccer"1st element
