@@ -54,8 +54,7 @@ output "years_of_establishment_output"{
 output "ifactive_output"{
   value = var.ifactive
 }
-output "printwinterlistofsports"{
-  value = local.icehockey
-  value = local.snowboarding
-  value = local.iceskating
+output "winterlistofsports"{
+  value = [for sport in winterlistofsports:
+    print(sport)
 }
