@@ -38,5 +38,5 @@ variable "environment"{
 }
 variable "summersports"{
   type=list(string)
-  default="soccer","basketball","badminton","tabletennis","football"]
+  default=["soccer","basketball","badminton","tabletennis","football"]
 }
