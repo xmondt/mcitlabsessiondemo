@@ -28,3 +28,13 @@ for 3rd element in -->inside the list variable montreallistofresturants--->"timh
 for 4th element in -->inside the list variable montreallistofresturants--->"brasserie" 4th element
 for 5th element in -->inside the list variable montreallistofresturants--->"steakhouse" 5th element
 */
+output "myfavouritefood"{
+   value=[for myfavouritefood in var.favouritefood:favouritefood]
+}
+/*
+for 1st element in -->inside the list variable myfavouritefood--->"beans"1st element
+for 2nd element in -->inside the list variable myfavouritefood--->"rice" 2nd element
+for 3rd element in -->inside the list variable myfavouritefood--->"corn" 3rd element
+for 4th element in -->inside the list variable myfavouritefood--->"burntbeef" 4th element
+for 5th element in -->inside the list variable myfavouritefood--->"peppersoup" 5th element
+*/
