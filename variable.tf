@@ -48,7 +48,7 @@ variable "montrealresturants"{
   type=list(string)
   default=["holder","mcdonald","timhortons","brasserie","steakhouse"]
 }
-variable "myfavouritefood"{
+variable "myfavouritefoods"{
   type=list(string)
   default=["beans","rice","corn","burntbeef","peppersoup"]
 }
