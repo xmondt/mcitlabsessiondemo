@@ -55,6 +55,10 @@ output "ifactive_output"{
   value = var.ifactive
 }
 output "winterlistofsports"{
-  value = [for sport in winterlistofsports:
-    print(sport)
+  value = [for sport in local.winterlistofsports:sport]
 }
+/*
+for 1st element in -->inside the list variable winterlistofsports--->"icehockey"1st element
+for 2nd element in -->inside the list variable winterlistofsports--->"snowboarding" 2nd element
+for 3rd element in -->inside the list variable winterlistofsports--->"iceskating" 3rd element
+*/
