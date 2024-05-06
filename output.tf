@@ -18,7 +18,7 @@ for 3rd element in -->inside the list variable montreallistofuniversities--->"va
 for 4th element in -->inside the list variable montreallistofuniversities--->"cegep" 4th element
 for 5th element in -->inside the list variable montreallistofuniversities--->"rosemontcollege" 5th element
 */
-output "montrealresturants"{
+output "montrealresturantslists"{
    value=[for montrealresturant in var.montrealresturants:montrealresturant]
 }
 /*
