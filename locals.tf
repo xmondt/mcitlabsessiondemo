@@ -45,10 +45,6 @@ variable "ifactive"{
  type=bool
  default=true
 }
-variable "summersports"{
-    type = list(string)
-    default=["soccer","basketball","badminton","tabletennis","football"]
-}
 output "company_name"{
   value = var.company_name
 }
