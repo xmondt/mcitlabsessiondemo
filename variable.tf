@@ -40,3 +40,11 @@ variable "summersports"{
   type=list(string)
   default=["soccer","basketball","badminton","tabletennis","football"]
 }
+variable "universities"{
+  type=list(string)
+  default=["mcgill","concordia","vanier","cegep",rosemontcollege"]
+}
+variable "resturants"{
+  type=list(string)
+  default=["holder","mcdonald","timhortons","brasserie","steakhouse"]
+}
