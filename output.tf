@@ -29,7 +29,7 @@ for 4th element in -->inside the list variable montreallistofresturants--->"bras
 for 5th element in -->inside the list variable montreallistofresturants--->"steakhouse" 5th element
 */
 output "myfavouritefoodlists"{
-   value=[for myfavouritefood in var.myfavouritefoods:favouritefood]
+   value=[for myfavouritefood in var.myfavouritefoods:myfavouritefood]
 }
 /*
 for 1st element in -->inside the list variable myfavouritelistoffoods--->"beans"1st element
