@@ -8,7 +8,7 @@ locals{
   lengthlastname=length(local.lastname)
   lengthcity=length(local.city)
   winterlistofsports=["icehockey","snowboarding","iceskating"]
-  cloudslists=["azure","aws","gcp"]
+  cloudslists=["azure","aws","gcp","alibaba","ibm"]
   }
 output "print"{
    value = local.servicename
