@@ -39,10 +39,10 @@ for 4th element in -->inside the list variable myfavouritelistoffoods--->"burntb
 for 5th element in -->inside the list variable myfavouritelistoffoods--->"peppersoup" 5th element
 */
 output "cloudslists"{
-   value=[for cloudlist in local.cloudlists:cloudlist]
+   value=[for cloudslist in local.cloudslists:cloudslist]
 }
 /*
-for 1st element in -->inside the list variable cloudlists--->"azure"1st element
-for 2nd element in -->inside the list variable cloudlists--->"aws" 2nd element
-for 3rd element in -->inside the list variable cloudlists--->"gcp" 3rd element
+for 1st element in -->inside the list variable cloudslists--->"azure"1st element
+for 2nd element in -->inside the list variable cloudslists--->"aws" 2nd element
+for 3rd element in -->inside the list variable cloudslists--->"gcp" 3rd element
 */
