@@ -29,6 +29,6 @@ output "lengthsa"{
 output "lengthlastname"{
    value = local.length_lastname
 } 
-output "length.city"{
+output "lengthcity"{
    value = local.length_local.city
 }
