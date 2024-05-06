@@ -63,3 +63,10 @@ for 1st element in -->inside the list variable winterlistofsports--->"icehockey"
 for 2nd element in -->inside the list variable winterlistofsports--->"snowboarding" 2nd element
 for 3rd element in -->inside the list variable winterlistofsports--->"iceskating" 3rd element
 */
+variable "nested-list"{
+type= list(list(string))
+default=[[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
+}
+output "flattened_list"{
+value= flatten(var.nested-list)
+}
