@@ -72,9 +72,8 @@ value= flatten(var.nested-list)
 }
 locals {
 clouds= ["azure","aws","gcp"] 
-cloud_owners= ["Microsoft", "Amazon", "Google"]
+cloud_owners= ["Microsoft","Amazon","Google"]
 }
-
 output"cloud_owners_map"{
-value= { for index,cloud in local.clouds: cloud=> local.cloud_owners[index]
+value= [for_index,cloud_in local.clouds: cloud=> local.cloud_owners[index]
 }
