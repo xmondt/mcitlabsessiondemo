@@ -1,5 +1,3 @@
-STORAGE TF
-
 #This is an Azure Montreal College Information Technology - Lab Session
 
 resource "azurerm_resource_group" "azureresourcegroup" {
