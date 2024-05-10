@@ -2,6 +2,10 @@ variable "original_string1"{
  default = "Samuel.Dimbola"
 }
 
+variable "original_string2"{
+ default = "Samuel Dimbola"
+}
+
 # Function 1a: Uppercase the string
 output "uppercase_string1" {
  value = upper(var.original_string1)
@@ -30,3 +34,7 @@ output "concatenated_string1" {
 output "split_example1" {
   value = split(" ", var.original_string1)
 }
+
+# Function 6c: Split the string by space into a list
+output "split_example2" {
+  value = split(" ", var.original_string2)
