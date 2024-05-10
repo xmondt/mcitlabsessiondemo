@@ -1,5 +1,5 @@
 variable "original_string1"{
- default = "Samuel Dimbola"
+ default = "Samuel.Dimbola"
 }
 
 # Function 1a: Uppercase the string
