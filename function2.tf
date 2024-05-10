@@ -38,3 +38,4 @@ output "split_example1" {
 # Function 6c: Split the string by space into a list
 output "split_example2" {
   value = split(" ", var.original_string2)
+}
