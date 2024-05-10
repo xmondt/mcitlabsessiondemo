@@ -49,7 +49,7 @@ output "join_example" {
  value = join(" ", var.string_list)
 }
 
-+ Function 9: Trim leading and trailing whitespace
+# Function 9: Trim leading and trailing whitespace
 variable "whitespace_string" {
  default = " Trimmed String"
 }
