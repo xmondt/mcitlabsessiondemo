@@ -12,3 +12,8 @@ output "string_length"{
 output "uppercaser_string" {
  value = upper(var.original_string)
 }
+
+# Function 3: Lowercase the string
+output "lowercaser_string" {
+ value = lower(var.original_string)
+}
