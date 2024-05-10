@@ -3,7 +3,7 @@ variable "original_string"{
 }
 
 
-Function 1: Length of the string
+# Function 1: Length of the string
 output "string_length"{
  value = length(var.original_string)
 }
