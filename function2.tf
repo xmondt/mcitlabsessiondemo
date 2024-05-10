@@ -35,6 +35,14 @@ output "split_example1" {
   value = split(" ", var.original_string1)
 }
 
+variable "string_listshow" {
+ default = "Sam Paul Solomon Nancy Brenda"
+}
+
+output "split_forme" {
+ value = split(" ", var.string_listshow)
+}
+
 # Function 6c: Split the string by space into a list
 output "split_example2" {
   value = split(" ", var.original_string2)
