@@ -27,6 +27,10 @@ variable "additional_string" {
  default = " from Terraform"
 }
 
+# Function 6: Substring - Extract "World" from the string
+output "substring_example" {
+ value =substr(var.original_string, 6, -1)
+}
 output "concatenated_string" {
  value = "${var.original_string}${var.additional_string}"
 }
