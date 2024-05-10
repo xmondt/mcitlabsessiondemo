@@ -14,6 +14,6 @@ output "lowercase_string1" {
 
 # Function 4: Replace "Hello" with "Hi"
 output "replaced_string1" {
- value = replace(var.original_string1, "Samuel", "Dimbola")
+ value = replace(var.original_string1, "Samuel Dimbola", "Dimbola Samuel")
 }
 
