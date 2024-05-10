@@ -9,11 +9,17 @@ output "string_length"{
 }
 
 # Function 2: Uppercase the string
-output "uppercasernow_string" {
+output "uppercase_string" {
  value = upper(var.original_string)
 }
 
 # Function 3: Lowercase the string
-output "lowercaser_string" {
+output "lowercase_string" {
  value = lower(var.original_string)
 }
+
+# Function 4: Replace "Hello" with "Hi"
+output "replaced_string" {
+ value = replace(var.original_string, "Montreal College Information Technology", "McGill University")
+}
+
