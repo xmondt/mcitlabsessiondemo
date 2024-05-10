@@ -7,3 +7,8 @@ variable "original_string"{
 output "string_length"{
  value = length(var.original_string)
 }
+
+# Function 2: Uppercase the string
+output "uppercaser_string" {
+ value = upper(var.original_string)
+}
