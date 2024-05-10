@@ -12,7 +12,7 @@ output "lowercase_string1" {
  value = lower(var.original_string1)
 }
 
-# Function 4: Replace "Hello" with "Hi"
+# Function 4: Replace "Hi" with "Hello"
 output "replaced_string1" {
  value = replace(var.original_string1, "Samuel", "Dimbola")
 }
