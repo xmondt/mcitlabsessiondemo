@@ -18,6 +18,6 @@ output "replaced_string1" {
 }
 
 # Function 4: Replace "Hi" with "Hello"
-output "replaced_string1" {
- value = replace(var.original_string1, "Dimbola", "Samuel")
+output "replaced_string2" {
+ value = replace(var.original_string2, "Dimbola", "Samuel")
 }
