@@ -1,13 +1,13 @@
-variable "original_string"{
+variable "original_string1"{
  default = "Samuel Dimbola"
 }
 
 # Function 1a: Uppercase the string
-output "uppercase_string" {
- value = upper(var.original_string)
+output "uppercase_string1" {
+ value = upper(var.original_string1)
 }
 
 # Function 2a: Lowercase the string
-output "lowercase_string" {
- value = lower(var.original_string)
+output "lowercase_string1" {
+ value = lower(var.original_string1)
 }
