@@ -9,7 +9,7 @@ output "string_length"{
 }
 
 # Function 2: Uppercase the string
-output "uppercaser_string" {
+output "uppercasernow_string" {
  value = upper(var.original_string)
 }
 
