@@ -12,12 +12,12 @@ output "lowercase_string1" {
  value = lower(var.original_string1)
 }
 
-# Function 4: Replace "Hello" with "Hi"
+# Function 4a: Replace "Hello" with "Hi"
 output "replaced_string1" {
  value = replace(var.original_string1, "Samuel Dimbola", "Dimbola Samuel")
 }
 
-# Function 5: Concatenate with another string1
+# Function 5a: Concatenate with another string1
 variable "additional_string1" {
  default = " from Lachine"
 }
