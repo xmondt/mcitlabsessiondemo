@@ -53,3 +53,27 @@ output "join_example" {
 variable "whitespace_string" {
  default = " Trimmed String"
 }
+
+output "trimmed_string" {
+  value = trim(var.whitespace_string," ")
+}
+
+
+output "reverse_example" {
+  value = join("", reverse(split("", var.original_string)))
+}
+
+locals {
+  contains_keyword = contains(split(" ", var.original_string), "MCIT")
+}
+output "contains_keyword_output"{
+    value=local.contains_keyword
+}
+
+output "string_contains_no_sample" {
+  value = local.contains_keyword ? "String contains 'Mcit'" : "String does not contain 'Mcit'"
+}
+
+output "string_contains_sample" {
+  value = local.contains_keyword ? "String contains 'Montreal'" : "String does not contain 'Montreal'"
+}
