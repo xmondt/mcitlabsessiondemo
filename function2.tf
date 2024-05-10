@@ -18,6 +18,6 @@ output "replaced_string1" {
 }
 
 # Function 5: Concatenate with another string
-variable "additional_string" {
+variable "additional_string1" {
  default = " from Lachine"
 }
