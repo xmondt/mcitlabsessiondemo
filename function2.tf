@@ -17,3 +17,7 @@ output "replaced_string1" {
  value = replace(var.original_string1, "Samuel Dimbola", "Dimbola Samuel")
 }
 
+# Function 5: Concatenate with another string
+variable "additional_string" {
+ default = " from Lachine"
+}
