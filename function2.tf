@@ -27,6 +27,6 @@ output "concatenated_string1" {
 }
 
 # Function 6b: Split the string by space into a list
-output "split_example" {
-  value = split(" ", var.original_string)
+output "split_example1" {
+  value = split(" ", var.original_string1)
 }
