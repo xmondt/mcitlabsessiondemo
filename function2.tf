@@ -25,3 +25,8 @@ variable "additional_string1" {
 output "concatenated_string1" {
  value = "${var.original_string1}${var.additional_string1}"
 }
+
+# Function 6b: Split the string by space into a list
+output "split_example" {
+  value = split(" ", var.original_string)
+}
