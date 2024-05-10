@@ -39,3 +39,17 @@ output "concatenated_string" {
 output "split_example" {
   value = split(" ", var.original_string)
 }
+
+# Function 8: Join a list of strings into a single string with a separator
+variable "string_list" {
+ default = ["Montreal", "College", "Information", "Technology"]
+}
+
+output "join_example" {
+ value = join(" ", var.string_list)
+}
+
++ Function 9: Trim leading and trailing whitespace
+variable "whitespace_string" {
+ default = " Trimmed String"
+}
