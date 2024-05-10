@@ -53,7 +53,7 @@ output "join_example" {
 
 # Function 9: Trim leading and trailing whitespace
 variable "whitespace_string" {
- default = " Trimmed String"
+ default = " Trimmed String  "
 }
 
 output "trimmed_string" {
