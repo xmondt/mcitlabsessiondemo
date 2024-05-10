@@ -22,3 +22,11 @@ output "replaced_string" {
  value = replace(var.original_string, "Montreal College Information Technology", "McGill University")
 }
 
+# Function 5: Concatenate with another string
+variable "additional_string" {
+ default = " from Terraform"
+}
+
+output "concatenated_string" {
+ value = "${var.original_string}${var.additional_string}"
+}
