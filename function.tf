@@ -34,3 +34,8 @@ output "substring_example" {
 output "concatenated_string" {
  value = "${var.original_string}${var.additional_string}"
 }
+
+# Function 7: Split the string by space into a list
+output "split_example" {
+  value = split(" ", var.original_string)
+}
