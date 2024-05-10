@@ -17,11 +17,3 @@ output "replaced_string1" {
  value = replace(var.original_string1, "Samuel", "Dimbola")
 }
 
-variable "original_string2"{
- default = "Samuel Dimbola"
-}
-
-# Function 4: Replace "Hi" with "Hello"
-output "replaced_string2" {
- value = replace(var.original_string2, "Dimbola", "Samuel")
-}
