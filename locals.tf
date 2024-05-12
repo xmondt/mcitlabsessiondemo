@@ -29,6 +29,22 @@ variable "string_words" {
  default = "upper LOWER"
 }
 
+variable "string_word1" {
+ default = "upper"
+}
+
+variable "stringword2" {
+ default = "LOWER"
+}
+
+output "uppercase_word1" {
+ value = upper(var.string_word1)
+}
+
+output "lowercase_word2" {
+ value = lower(var.string_word2)
+}
+
 output "split_formenow" {
  value = split(" ", var.string_words)
 }
