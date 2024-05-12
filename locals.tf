@@ -51,8 +51,8 @@ output "split_formenow" {
 
 output "output_combined" {
   value = join(" ", [
-    uppercase_word1,
-    lowercase_word2
+    UPPER,
+    lower
   ])
 }
 
