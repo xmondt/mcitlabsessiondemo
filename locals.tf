@@ -9,8 +9,8 @@ locals{
   lengthcity=length(local.city)
   winterlistofsports=["icehockey","snowboarding","iceskating"]
   cloudslists=["azure","aws","gcp","alibaba","ibm"]
-  visitcountries = [“Ghana", “Togo", “London", “America", “Russia"]
-  countrieswish = join(" + ", local.visitcountries) 
+  visitcountries=["Ghana","Togo","London","America","Russia"]
+  countrieswish=join(" + ", local.visitcountries) 
   }
 
 output "countrieswish" {
