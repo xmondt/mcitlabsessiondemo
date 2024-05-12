@@ -11,7 +11,7 @@ locals{
   cloudslists=["azure","aws","gcp","alibaba","ibm"]
   visitcountries=["Ghana","Togo","London","America","Russia"]
   countrieswish=join(" + ", local.visitcountries) 
-  }
+}
 
 output "countrieswish" {
    value = local.countrieswish
