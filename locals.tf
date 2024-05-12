@@ -49,6 +49,13 @@ output "split_formenow" {
  value = split(" ", var.string_words)
 }
 
+output "output_combined" {
+  value = join(" ", [
+    uppercase_word1.UPPER,
+    lowercase_word2.lower
+  ])
+}
+
 output "join_string" {
  value = join(" ", var.mergedstring)
 }
