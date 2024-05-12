@@ -27,7 +27,7 @@ output "join_string" {
 }
 
 output "I love Canada" {
-  value = trim(var.whitespace_string," ")
+  value = trim(var.whitespace_string2," ")
 }
 output "countrieswish"{
    value = local.countrieswish
