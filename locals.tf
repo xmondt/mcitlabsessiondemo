@@ -22,6 +22,17 @@ variable "whitespace_string2" {
  default = "I love Canada "
 }
 
+variable "original_string3" {
+ default = "upper LOWER"
+}
+variable "string_words" {
+ default = "upper LOWER"
+}
+
+output "split_formenow" {
+ value = split(" ", var.string_words)
+}
+
 output "join_string" {
  value = join(" ", var.mergedstring)
 }
