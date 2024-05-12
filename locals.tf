@@ -26,7 +26,7 @@ output "join_string" {
  value = join(" ", var.mergedstring)
 }
 
-output "I love Canada" {
+output "I_love_Canada" {
   value = trim(var.whitespace_string2," ")
 }
 output "countrieswish"{
