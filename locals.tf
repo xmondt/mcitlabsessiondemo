@@ -49,13 +49,6 @@ output "split_formenow" {
  value = split(" ", var.string_words)
 }
 
-output "output_combined" {
-  value = join(" ", [
-    UPPER,
-    lower
-  ])
-}
-
 output "join_string" {
  value = join(" ", var.mergedstring)
 }
