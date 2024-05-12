@@ -18,8 +18,9 @@ variable "mergedstring" {
  default = ["I love", "Canada "]
 }
 
-variable "whitespace_string" {
+variable "whitespace_string2" {
  default = "I love Canada "
+}
 
 output "join_string" {
  value = join(" ", var.mergedstring)
