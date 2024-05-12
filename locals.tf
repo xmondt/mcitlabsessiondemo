@@ -16,7 +16,7 @@ locals{
 }
 
 output "join_string"{
-   value = join(" ", local.visitcountries)
+   value = join(" ", join_string)
 }
 
 output "countrieswish"{
