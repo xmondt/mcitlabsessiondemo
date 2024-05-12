@@ -15,13 +15,19 @@ locals{
 }
 
 variable "mergedstring" {
- default = ["I love", "Canada"]
+ default = ["I love", "Canada "]
 }
+
+variable "whitespace_string" {
+ default = "I love Canada "
 
 output "join_string" {
  value = join(" ", var.mergedstring)
 }
 
+output "I love Canada" {
+  value = trim(var.whitespace_string," ")
+}
 output "countrieswish"{
    value = local.countrieswish
 }
