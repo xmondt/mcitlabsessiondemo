@@ -14,7 +14,7 @@ locals{
   }
 
 output "countrieswish" {
-   value = locals.countrieswish
+   value = local.countrieswish
 }
 output "print"{
    value = local.servicename
