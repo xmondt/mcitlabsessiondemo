@@ -33,7 +33,7 @@ variable "string_word1" {
  default = "upper"
 }
 
-variable "stringword2" {
+variable "string_word2" {
  default = "LOWER"
 }
 
