@@ -11,10 +11,14 @@ locals{
   cloudslists=["azure","aws","gcp","alibaba","ibm"]
   visitcountries=["Ghana","Togo","London","America","Russia"]
   countrieswish=join(" + ", local.visitcountries) 
+  canadaamonglist = contains(local.visitcountries, "Canada")
 }
 
-output "countrieswish" {
+output "countrieswish"{
    value = local.countrieswish
+}
+output "canadaamonglist"{
+   value = local.canadaamonglist
 }
 output "print"{
    value = local.servicename
