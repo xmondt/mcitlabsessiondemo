@@ -12,6 +12,11 @@ locals{
   visitcountries=["Ghana","Togo","London","America","Russia"]
   countrieswish=join(" + ", local.visitcountries) 
   canadaamonglist = contains(local.visitcountries, "Canada")
+  join_string = ["I love", "Canada "]
+}
+
+output "join_string"{
+   value = join(" ", local.visitcountries)
 }
 
 output "countrieswish"{
