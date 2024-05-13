@@ -6,6 +6,6 @@ resource "azurerm_resource_group" "musicresourcegroup" {
   location = "Canada Central"
 }
 
-output "musicresourcegroup_output"{
-  value = var.azuremusicresourcegroup
+output "company_name_output"{
+    value=var.company_name
 }
