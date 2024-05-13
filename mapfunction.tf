@@ -37,6 +37,22 @@ variable "nested_map1" {
   }
 }
 
+variable "total_output" {
+  type    = list(string)
+  default = ["150", "150", "150"]
+}
+
+locals {
+  incremented_output = [
+    for value in var.total_output :
+    tostring(tonumber(value) + 10)
+  ]
+}
+
+output "incremented_output" {
+  value = local.incremented_output
+}
+
 output "nested_map1_output" {
   value = var.nested_map1
 }
