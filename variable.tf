@@ -52,3 +52,8 @@ variable "myfavouritefoods"{
   type=list(string)
   default=["beans","rice","corn","burntbeef","peppersoup"]
 }
+
+variable "myazureresourcegroup"{
+ type=string 
+default="My Underneath Songs Is Coming"
+}
