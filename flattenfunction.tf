@@ -1,5 +1,5 @@
 variable "simple_nested_list" {
- type = list(list(string))
+ type = list(list(string))j
  default = [["a","b"], ["c","d"], ["e","f"]]
 }
 
@@ -20,4 +20,8 @@ output "flattened_list_output" {
 
 output "flattened_list2_output" {
   value = local.flattened_list2
+}
+
+output "flattened_map_result" {
+  value = local.flattened_map
 }
