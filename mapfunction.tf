@@ -15,3 +15,10 @@ flattened_map  = flatten([for k, v in var.nested_map : [for kk, vv in v : { grou
 output "flattened_map_result" {
   value = local.flattened_map
 }
+
+
+ characters = ["luke", "yoda", "darth"]
+  enemies_destroyed = [4252, 900, 20000056894]
+  character_enemy_map =   { for index,character in local.characters: # Convert character list to a set
+      character => local.enemies_destroyed[index]
+  }
