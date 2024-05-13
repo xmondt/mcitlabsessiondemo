@@ -28,7 +28,7 @@ output "character_enemy_output" {
   value = local.character_enemy_map
 }
 
-variable "nested_map" {
+variable "nested_map1" {
   type = map(map(string))
   default = {
     group1 = {"name" = "Alice", "age" = "25"}
@@ -37,6 +37,6 @@ variable "nested_map" {
   }
 }
 
-output "nested_map_output" {
-  value = var.nested_map
+output "nested_map1_output" {
+  value = var.nested_map1
 }
