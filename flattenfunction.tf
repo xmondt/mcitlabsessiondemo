@@ -22,6 +22,6 @@ output "flattened_list2_output" {
   value = local.flattened_list2
 }
 
-output "flattened_map_result" {
-  value = local.flattened_map
+output "simple_nested_list_result_output" {
+  value = var.simple_nested_list
 }
