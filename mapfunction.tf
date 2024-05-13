@@ -7,3 +7,4 @@ variable "nested_map" {
 
 locals {
   flattened_map = flatten([for k, v in var.nested_map : [for kk, vv in v : {group = k, key = kk, value = vv}]])
+}
