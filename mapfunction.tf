@@ -27,3 +27,16 @@ locals{
 output "character_enemy_output" {
   value = local.character_enemy_map
 }
+
+variable "nested_map" {
+  type = map(map(string))
+  default = {
+    group1 = {"name" = "Alice", "age" = "25"}
+    group2 = {"name" = "Bob", "age" = "30"}
+    group3 = {"name" = "Charlie", "age" = "35"}
+  }
+}
+
+output "nested_map_output" {
+  value = var.nested_map
+}
