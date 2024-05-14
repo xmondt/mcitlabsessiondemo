@@ -57,3 +57,12 @@ variable "myazureresourcegroup"{
  type=string 
 default="My Underneath Songs Is Coming"
 }
+
+variable "classworkclusters"{
+type =list(string)
+default=["montreal","toronto","vancouver","alberta"]
+}
+variable "dnsprefix"{
+type=string
+
+}
