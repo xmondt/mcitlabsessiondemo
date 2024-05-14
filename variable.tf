@@ -63,8 +63,8 @@ type =list(string)
 default=["montreal","toronto","vancouver","alberta"]
 }
 
-variable "dnsprefix"{
-type=string
-default = ["dubai","abudabi"]
-
+variable "dnsprefix" {
+  type = string
+  description = "DNS prefix for the application"
 }
+
