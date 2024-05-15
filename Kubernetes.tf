@@ -9,7 +9,6 @@ resource "azurerm_resource_group" "musicresourcegroup" {
 
 resource "azurerm_kubernetes_cluster" "batchabcd" {
   for_each = { for cluster in local.cluster_names : cluster => cluster }
-
   name                = "MUSIC_${each.key}"
   location            = azurerm_resource_group.musicresourcegroup.location
   resource_group_name = azurerm_resource_group.musicresourcegroup.name
