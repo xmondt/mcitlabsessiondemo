@@ -68,6 +68,6 @@ variable "dnsprefix" {
   default = "DNS prefix for the application"
 }
 
-output "dnsprefix"{
-    value=var.montreal
+output "dnsprefix_output" {
+  value = var.dnsprefix
 }
