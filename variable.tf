@@ -69,5 +69,5 @@ variable "dnsprefix" {
 }
 
 output "dnsprefix"{
-    value=var.dnsprefix
+    value=var.montreal
 }
