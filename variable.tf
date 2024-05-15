@@ -67,6 +67,3 @@ type =list(string)
 default=["montreal","toronto","vancouver","alberta"]
 }
 
-prefix = "my-aks-"
-dnsprefix = "mydnsprefix"
-classworkclusters = ["cluster1", "cluster2", "cluster3"]
