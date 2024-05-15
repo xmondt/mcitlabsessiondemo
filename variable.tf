@@ -65,6 +65,9 @@ default=["montreal","toronto","vancouver","alberta"]
 
 variable "dnsprefix" {
   type = string
-  description = "DNS prefix for the application"
+  default = "DNS prefix for the application"
 }
 
+output "dnsprefix"{
+    value=var.dnsprefix
+}
