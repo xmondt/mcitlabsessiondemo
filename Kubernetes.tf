@@ -44,27 +44,12 @@ output "client_certificate" {
 
 output "kube_config" {
   value = [for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.kube_config_raw]
+
   sensitive = true
 }
-
 output "kube_id"{
   value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.id ]
 }
-
-output "client_key" {
-  sensitive = true
-  value = [for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.kube_config.0.client_key]
-
-output "cluster_ca_certificate" {
-  sensitive = true
-  value = [for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.kube_config.0.cluster_ca_certificate]
-}
-
-output "host" {
-  sensitive = true
-  value = [for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.kube_config.0.host]
-}
-
 output "kube_name"{
   value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.name ]
 }
