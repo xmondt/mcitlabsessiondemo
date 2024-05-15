@@ -28,9 +28,6 @@ variable "account_replication_type"{
   default="GRS"
 }
 
-prefix = "my-aks-"
-dnsprefix = "mydnsprefix"
-classworkclusters = ["cluster1", "cluster2", "cluster3"]
 variable "cross_tenant_replication_enabled"{
  type=bool
  default=false
