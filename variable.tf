@@ -64,3 +64,7 @@ type =list(string)
 default=["montreal","toronto","vancouver","alberta"]
 }
 
+variable "dnsprefix"{
+type=string
+default="miusicdns"
+}
