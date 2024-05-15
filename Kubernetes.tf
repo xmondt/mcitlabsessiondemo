@@ -22,7 +22,6 @@ default_node_pool {
 
   identity {
     type = "SystemAssigned"
-  }
 }
 
 tags = {
