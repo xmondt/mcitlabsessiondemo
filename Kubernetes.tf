@@ -26,9 +26,8 @@ default_node_pool {
 
 tags = {
     Environment = "Production"
-  }
 }
-/*
+
 output "client_certificate" {
   value     = [for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.kube_config.0.client_certificate]
   sensitive = true
@@ -36,9 +35,9 @@ output "client_certificate" {
 
 output "kube_config" {
   value = [for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.kube_config_raw]
-
   sensitive = true
 }
+
 output "kube_id"{
   value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.id ]
 }
@@ -46,7 +45,6 @@ output "kube_id"{
 output "kubernetes_cluster_names" {
   value = [for cluster in azurerm_kubernetes_cluster.batchabcd : cluster.name]
 }
-*/
 
 
 
