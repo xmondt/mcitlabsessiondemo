@@ -20,6 +20,7 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
   name                = "${var.prefix}${each.key}"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = var.dnsprefix
   default_node_pool {
     name       = "default"
     node_count = 1
@@ -50,5 +51,9 @@ output "kube_id"{
 }
 output "kube_name"{
   value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.name ]
+}
+
+output "kubernetes_cluster_ids" {
+  value = [for k, v in azurerm_kubernetes_cluster.batchabcd : v.id]
 }
 */
