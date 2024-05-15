@@ -14,6 +14,10 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
   resource_group_name = azurerm_resource_group.musicresourcegroup.name
   dns_prefix          = "musicdns-${each.key}"
 
+  identity{
+  type = "SystemAssigned"
+  }
+
   default_node_pool {
     name       = "default"
     node_count = 3
