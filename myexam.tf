@@ -1,30 +1,31 @@
 /*
 locals{
-   vm_list=["firstvm","secondvm","thirdvm","fourthvm","fifthvm"]
+   vm_names=["firstvm","secondvm","thirdvm","fourthvm","fifthvm"]
 }
 
 resource "azurerm_resource_group" "musicresourcegroup" {
-  name     = "${var.prefix}-resources"
+  name     = "MUSIC_resource_group"
   location = "Canada Central"
 }
 
 resource "azurerm_virtual_network" "musicvn" {
-  name                = "${var.prefix}-network"
-  address_space       = ["10.0.4.0/18"]
+  name                = "musicvn"
+  address_space       = ["10.0.0.0/18"]
   location            = azurerm_resource_group.musicresourcegroup.location
   resource_group_name = azurerm_resource_group.musicresourcegroup.name
 }
 
-resource "azurerm_subnet" "internal" {
-  name                 = "internal"
+resource "azurerm_subnet" "musicvn" {
+  name                 = "musicvn-subnet"
   resource_group_name  = azurerm_resource_group.musicresourcegroup.name
   virtual_network_name = azurerm_virtual_network.musicvn.name
-  address_prefixes     = ["10.0.4.0/32"]
+  address_prefixes     = ["10.0.0.0/32"]
 }
 
 resource "azurerm_network_interface" "musicvn" {
+  for_each            = toset(local.vm_names)
   name                = "${var.prefix}-nic"
-  location            = azurerm_resource_group.musicresourcegroup.location
+  location            = azurerm_resource_group.music.location
   resource_group_name = azurerm_resource_group.musicresourcegroup.name
 
   ip_configuration {
@@ -38,10 +39,12 @@ resource "azurerm_virtual_machine" "musicvn" {
   count        = 5
   for_each     = {for vm in local.vm_list: vm=>vm}
   name         = "${var.prefix}-vm"
+  name         = list(["firstvm","secondvm","thirdvm","fourthvm","fifthvm"], count.index)
   location              = azurerm_resource_group.musicresourcegroup.location
   resource_group_name   = azurerm_resource_group.musicresourcegroup.name
   network_interface_ids = [azurerm_network_interface.musicvn.id]
   vm_size               = "Standard_DS1_v2"
+}
 
   # Uncomment this line to delete the OS disk automatically when deleting the VM
   # delete_os_disk_on_termination = true
