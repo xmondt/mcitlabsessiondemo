@@ -1,0 +1,43 @@
+vms:
+  - name: sixthvm
+    resource_group: "video2resourcegroup"
+    location: "Canada East"
+    vm_size: "Standard_DS2_v2"
+    image: "Ubuntu 20.04 LTS"
+    admin_username: "my_admin"
+    admin_password: "my_password"
+    virtual_network: "videovn"
+  - name: seventhvm
+    resource_group: "video2resourcegroup"
+    location: "Canada East"
+    vm_size: "Standard_DS2_v2"
+    image: "Ubuntu 20.04 LTS"
+    admin_username: "my_admin"
+    admin_password: "my_password"
+    virtual_network: "videovn"
+  - name: eighthvm
+    resource_group: "video2resourcegroup"
+    location: "Canada East"
+    vm_size: "Standard_DS2_v2"
+    image: "Ubuntu 20.04 LTS"
+    admin_username: "my_admin"
+    admin_password: "my_password"
+    virtual_network: "videovn"
+  - name: ninthvm
+    resource_group: "video2resourcegroup"
+    location: "Canada East"
+    vm_size: "Standard_DS2_v2"
+    image: "Ubuntu 20.04 LTS"
+    admin_username: "my_admin"
+    admin_password: "my_password"
+    virtual_network: "videovn"
+  - name: tenthvm
+    resource_group: "video2resourcegroup"
+    location: "Canada East"
+    vm_size: "Standard_DS2_v2"
+    image: "Ubuntu 20.04 LTS"
+    admin_username: "my_admin"
+    admin_password: "my_password"
+    virtual_network: "videovn"
+
+
