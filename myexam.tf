@@ -77,10 +77,12 @@ variable "prefix1" {
 
 variable "admin_username" {
   type = string
+  default = "my_default_username"
 }
 
 variable "admin_password" {
   type = string
+  default = "my_default_password"
 }
 
 variable "pc_name" {
