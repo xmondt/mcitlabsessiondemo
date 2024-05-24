@@ -49,7 +49,7 @@ resource "azurerm_virtual_machine" "musicvn" {
 
   # Uncomment this line to delete the data disks automatically when deleting the VM
   # delete_data_disks_on_termination = true
-}
+
   storage_image_reference {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-jammy"
