@@ -37,7 +37,6 @@ resource "azurerm_network_interface" "musicvn" {
 resource "azurerm_virtual_machine" "musicvn" {
   count        = 5
   for_each     = {for vm in local.vm_list: vm=>vm}
-  name         = "${var.prefix}-vm"
   name         = list(["firstvm","secondvm","thirdvm","fourthvm","fifthvm"], count.index)
   location              = azurerm_resource_group.musicresourcegroup.location
   resource_group_name   = azurerm_resource_group.musicresourcegroup.name
