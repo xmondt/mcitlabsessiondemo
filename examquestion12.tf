@@ -47,15 +47,3 @@ resource "azurerm_subnet" "videovn" {
   address_prefixes     = ["10.0.1.0/24"]
 }
 
-# File: virtual_machines.yml
-virtual_machines:
-  - name: sixthvm
-    vm_size: Standard_DS2_v2
-  - name: seventhvm
-    vm_size: Standard_DS2_v2
-  - name: eighthvm
-    vm_size: Standard_DS2_v2
-  - name: ninthvm
-    vm_size: Standard_DS2_v2
-  - name: tenthvm
-    vm_size: Standard_DS2_v2
