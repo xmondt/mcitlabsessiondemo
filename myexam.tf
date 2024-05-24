@@ -18,7 +18,7 @@ resource "azurerm_subnet" "musicvn" {
   name                 = "musicvn-subnet"
   resource_group_name  = azurerm_resource_group.musicresourcegroup.name
   virtual_network_name = azurerm_virtual_network.musicvn.name
-  address_prefixes     = ["10.0.0.0/24"]  # Adjusted from /32 to /24 for valid subnet
+  address_prefixes     = ["10.0.0.0/24"] 
 }
 
 resource "azurerm_network_interface" "musicvn" {
@@ -71,7 +71,7 @@ resource "azurerm_virtual_machine" "musicvn" {
   }
 }
 
-variable "prefix" {
+variable "prefix1" {
   default = "tfvmex"
 }
 
