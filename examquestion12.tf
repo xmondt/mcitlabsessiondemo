@@ -1,10 +1,3 @@
-terraform {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 2.90.0"
-    }
-}
-
 provider "azurerm" {
   subscription_id = "your_subscription_id"
   client_id      = "your_client_id"
