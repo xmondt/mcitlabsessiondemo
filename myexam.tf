@@ -39,7 +39,7 @@ resource "azurerm_virtual_machine" "musicvn" {
   name                   = "${each.value}-vm"
   location               = azurerm_resource_group.musicresourcegroup.location
   resource_group_name    = azurerm_resource_group.musicresourcegroup.name
-  network_interface_ids  = [azurerm_network_interface[each.key].id]
+  network_interface_ids  = [azurerm_network_interface.musicvn[each.key].id]
   vm_size                = "Standard_DS1_v2"
 
   storage_image_reference {
