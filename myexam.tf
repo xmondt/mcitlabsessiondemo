@@ -35,11 +35,11 @@ resource "azurerm_network_interface" "musicvn" {
 }
 
 resource "azurerm_virtual_machine" "musicvn" {
-  for_each               = local.vm_names
+  for_each               = { for name in local.vm_names : name => name }
   name                   = "${each.value}-vm"
   location               = azurerm_resource_group.musicresourcegroup.location
   resource_group_name    = azurerm_resource_group.musicresourcegroup.name
-  network_interface_ids  = [azurerm_network_interface[each.value].id]
+  network_interface_ids  = [azurerm_network_interface[each.key].id]
   vm_size                = "Standard_DS1_v2"
 
   storage_image_reference {
