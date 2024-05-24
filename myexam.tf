@@ -36,7 +36,7 @@ resource "azurerm_network_interface" "musicvn" {
 
 resource "azurerm_virtual_machine" "musicvn" {
   count        = 5
-  for_each     = {for vm in local.vm_list: vm=>vm}
+  for_each     = {for vm in local.vm_names: vm=>vm}
   name         = "${var.prefix}-vm"
   location              = azurerm_resource_group.musicresourcegroup.location
   resource_group_name   = azurerm_resource_group.musicresourcegroup.name
@@ -49,24 +49,24 @@ resource "azurerm_virtual_machine" "musicvn" {
 
   # Uncomment this line to delete the data disks automatically when deleting the VM
   # delete_data_disks_on_termination = true
-
+}
   storage_image_reference {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-jammy"
     sku       = "22_04-lts"
     version   = "latest"
-  }
+}
   storage_os_disk {
     name              = "myosdisk1"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
-  }
+}
   os_profile {
     pc_name  = var.pc_name
     admin_username = var.admin_username
     admin_password = var.admin_password
-  }
+}
   os_profile_linux_config {
     disable_password_authentication = false
   }
