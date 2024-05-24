@@ -1,43 +1,12 @@
-vms:
+ # File: virtual_machines.yml
+virtual_machines:
   - name: sixthvm
-    resource_group: "video2resourcegroup"
-    location: "Canada East"
-    vm_size: "Standard_DS2_v2"
-    image: "Ubuntu 20.04 LTS"
-    admin_username: "my_admin"
-    admin_password: "my_password"
-    virtual_network: "videovn"
+    vm_size: Standard_DS2_v2
   - name: seventhvm
-    resource_group: "video2resourcegroup"
-    location: "Canada East"
-    vm_size: "Standard_DS2_v2"
-    image: "Ubuntu 20.04 LTS"
-    admin_username: "my_admin"
-    admin_password: "my_password"
-    virtual_network: "videovn"
+    vm_size: Standard_DS2_v2
   - name: eighthvm
-    resource_group: "video2resourcegroup"
-    location: "Canada East"
-    vm_size: "Standard_DS2_v2"
-    image: "Ubuntu 20.04 LTS"
-    admin_username: "my_admin"
-    admin_password: "my_password"
-    virtual_network: "videovn"
+    vm_size: Standard_DS2_v2
   - name: ninthvm
-    resource_group: "video2resourcegroup"
-    location: "Canada East"
-    vm_size: "Standard_DS2_v2"
-    image: "Ubuntu 20.04 LTS"
-    admin_username: "my_admin"
-    admin_password: "my_password"
-    virtual_network: "videovn"
+    vm_size: Standard_DS2_v2
   - name: tenthvm
-    resource_group: "video2resourcegroup"
-    location: "Canada East"
-    vm_size: "Standard_DS2_v2"
-    image: "Ubuntu 20.04 LTS"
-    admin_username: "my_admin"
-    admin_password: "my_password"
-    virtual_network: "videovn"
-
-
+    vm_size: Standard_DS2_v2
