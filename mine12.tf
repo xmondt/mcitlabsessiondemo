@@ -13,7 +13,7 @@ resource "azurerm_virtual_network" "videovn" {
 
 resource "azurerm_virtual_machine" "videovm" {
   count            = 5
-  name            = element(["sixthvm", "seventhvm", "eighthvm", "ninthvm", "tenthvm"], count.index)
+  name            = "samuel-vm-{count.index}"
   resource_group_name = azurerm_resource_group.video2resourcegroup.name
   location        = azurerm_resource_group.video2resourcegroup.location
   vm_size         = "Standard_DS2_v2"
