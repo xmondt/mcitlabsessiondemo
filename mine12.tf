@@ -17,7 +17,7 @@ resource "azurerm_virtual_machine" "videovm" {
   resource_group_name = azurerm_resource_group.video2resourcegroup.name
   location        = azurerm_resource_group.video2resourcegroup.location
   vm_size         = "Standard_DS2_v2"
-  network_interface_ids = [azurerm_network_interface.videovn[each.key].id]
+  network_interface_ids = [azurerm_network_interface.videovn[count.index].id]
 }
 
 resource "azurerm_network_interface" "videovn" {
