@@ -8,7 +8,7 @@ terraform{
   required_version=">=1.4.0"#this version is for Terraform Version, NOT azurerm
 }
 
-provider "azurerm1"{
+provider "azurerm"{
   features{}
   skip_provider_registration="true"
   
