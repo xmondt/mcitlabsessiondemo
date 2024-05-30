@@ -12,13 +12,21 @@ resource "azurerm_virtual_network" "videovn" {
 }
 
 resource "azurerm_virtual_machine" "videovm" {
-  count            = 5
-  name            = "samuel-vm-{count.index}"
-  resource_group_name = azurerm_resource_group.video2resourcegroup.name
-  location        = azurerm_resource_group.video2resourcegroup.location
-  vm_size         = "Standard_DS2_v2"
-  network_interface_ids = [azurerm_network_interface.videovn[count.index].id]
+  count                  = 5
+  name                   = "samuel-vm-${count.index}"
+  resource_group_name    = azurerm_resource_group.video2resourcegroup.name
+  location               = azurerm_resource_group.video2resourcegroup.location
+  vm_size                = "Standard_DS2_v2"
+  network_interface_ids  = [azurerm_network_interface.videovn[count.index].id]
+
+  storage_os_disk {
+    name              = "osdisk"
+    caching           = "ReadWrite"
+    create_option     = "FromImage"
+    managed_disk_type = "Standard_LRS"
+  }
 }
+
 
 resource "azurerm_network_interface" "videovn" {
   count            = 5
