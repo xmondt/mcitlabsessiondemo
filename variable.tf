@@ -77,3 +77,9 @@ variable "administrator_login_password" {
   default = "samueladminpassword"
 }
 
+
+variable "administrator_login" {
+  description = "The admin password for the virtual machine"
+  type        = string
+  default = "samueladmin"
+}
