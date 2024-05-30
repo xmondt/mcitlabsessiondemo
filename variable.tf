@@ -74,7 +74,7 @@ default="miusicdns"
 variable "administrator_login_password" {
   description = "The admin password for the virtual machine"
   type        = string
-  default = "samueladminpassword"
+  default = "Samuel@adminpassword1"
 }
 
 
